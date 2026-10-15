@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="description" content="BOUNCE RETURN - A high-precision arcade bouncing ball game. Tap, click, or press Space to bounce through the gates!">
+  <meta name="theme-color" content="#070b14">
+  <title>BOUNCE RETURN</title>
+  
+  <link rel="icon" type="image/png" href="assets/face-success.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-bottom"></div>
+
+  <main id="game-wrapper">
+    <div id="game-container">
+      <canvas id="game-canvas" width="720" height="420"></canvas>
+      
+      <!-- Top HUD Quick Controls -->
+      <div id="top-controls">
+        <button id="audio-toggle-btn" class="hud-btn" type="button" aria-label="Toggle Sound" title="Toggle Sound">
+          <svg id="sound-on-icon" class="hud-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+          <svg id="sound-off-icon" class="hud-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+        </button>
+
+        <button id="fullscreen-btn" class="hud-btn" type="button" aria-label="Toggle Fullscreen" title="Toggle Fullscreen">
+          <svg class="hud-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <footer id="game-footer">
+      <div class="footer-hint">
+        <span class="key-badge">Space</span> or <span class="key-badge">Click / Tap</span> to Bounce
+      </div>
+    </footer>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
