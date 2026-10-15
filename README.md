@@ -1,8 +1,13 @@
-# BOUNCE RETURN
+# BOUNCE RETURN (jagadesan-bounce)
 
 A high-precision, one-button arcade bouncing game built with vanilla HTML5, CSS3, and modern JavaScript.
 
 ![Bounce Return Preview](assets/face-success.png)
+
+## 🌐 Live URLs
+
+- **Vercel**: [https://jagadesan-bounce.vercel.app](https://jagadesan-bounce.vercel.app)
+- **GitHub Pages**: [https://hariganesh712.github.io/jagadesan-bounce/](https://hariganesh712.github.io/jagadesan-bounce/)
 
 ## 🎮 How to Play
 
@@ -18,31 +23,15 @@ A high-precision, one-button arcade bouncing game built with vanilla HTML5, CSS3
 - **Failure**: `JAGADESAN.mp3` plays once upon collision with 2.0x amplified loudness.
 - **Master Limiter**: Dynamics compressor prevents audio clipping or distortion across desktop and mobile devices.
 
-## 🚀 Deployment
-
-This project requires **no build tools**, **no npm dependencies**, and **no backend**. It is immediately deployable:
-
-### Vercel
-1. Install Vercel CLI (`npm i -g vercel`) or import the repo directly at [vercel.com](https://vercel.com).
-2. Run `vercel` in the project root.
-
-### Netlify
-1. Drag and drop the `bounce-return` directory into [app.netlify.com/drop](https://app.netlify.com/drop).
-2. Or connect your Git repository; publish directory is `./`.
-
-### GitHub Pages
-1. Push the code to a GitHub repository.
-2. Go to **Settings** > **Pages** > select branch `main` and root `/`.
-3. Save and your game is live!
-
 ## 📁 Project Structure
 
 ```text
-bounce-return/
+jagadesan-bounce/
 ├── index.html       # Semantic HTML5 container & controls
 ├── style.css        # Responsive dark cinematic theme & mobile viewport handling
 ├── game.js          # Core 60 FPS physics engine, state machine, Web Audio
-├── README.md        # Documentation and deployment guide
+├── vercel.json      # Vercel deployment configuration (project: jagadesan-bounce)
+├── README.md        # Documentation and live links
 └── assets/
     ├── face-success.png
     ├── face-failure.png
